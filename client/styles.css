@@ -1,0 +1,57 @@
+body, html{
+  font-family: 'Pontano Sans', sans-serif;
+  height:100%;
+}
+.libraryView{
+  
+}
+.songQueue{
+
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+  border: solid black 1px;
+}
+
+th {
+  font-weight: 1000;
+  background-color: #94C1FF;
+}
+
+table, th{
+  width: 100%;
+  max-width: 960px;
+  margin:0 auto;
+}
+
+td{
+  
+}
+
+audio{
+  margin: 0 auto;
+  width: 100%;
+}
+.artists{
+  width:25%;
+}
+.titles{
+  width: 75%;
+}
+.wrapper{
+  
+}
+h1{
+  display: inline-block;
+}
+#logo{
+  width: 45px;
+  position: relative;
+  top: 12px;
+  margin-right: 5px;
+}
+.nav{
+  max-width: 960px;
+  margin:0 auto;
+}

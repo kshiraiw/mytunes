@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
   <body>
+    <nav class="nav">
+      <img id="logo" src="resources/icon.jpeg">
+      <h1>MyTunes</h1>
+    </nav>
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->
     <script src="bower_components/jquery/jquery.min.js"></script>
@@ -28,7 +36,7 @@
         var app = new AppModel({library: library});
 
         // build a view for the top level of the whole app
-        var appView = new AppView({model: app});
+        var appView = new AppView({model: app, el:$('<div class="wrapper"></div>')});
 
         // put the view onto the screen
         $('body').append(appView.render());
