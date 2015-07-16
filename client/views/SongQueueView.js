@@ -19,7 +19,6 @@ var SongQueueView = Backbone.View.extend({
     this.$el.children().detach();
 
     this.$el.html('<th colspan="2">Song Queue</th>');
-    console.log(this.collection.length);
     if(this.collection.length > 0) {
       this.$el.append(
         this.collection.map(function(song){

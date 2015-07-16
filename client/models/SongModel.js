@@ -4,7 +4,8 @@ var SongModel = Backbone.Model.extend({
   defaults: {
     artist: 'Andrew Kishino',
     title: 'Rap the World in 80 Days',
-    url: ''
+    url: '',
+    playCount: 0
   },
 
   play: function(){

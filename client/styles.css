@@ -5,8 +5,8 @@ body, html{
 .libraryView{
   
 }
-.songQueue{
-
+.songQueue tr:first-child {
+  background-color: #e6aef7;
 }
 
 tr:nth-child(even) {
@@ -38,7 +38,11 @@ audio{
   width:25%;
 }
 .titles{
-  width: 75%;
+  width: 70%;
+}
+
+.playCount {
+  width: 5%;
 }
 .wrapper{
   
