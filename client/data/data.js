@@ -19,5 +19,15 @@ var songData = [
     url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/06+If+Your+Girl+Only+Knew.mp3",
     title: "If Your Girl Only Knew",
     artist: "Aaliyah",
+  },
+  {
+    url: "resources/Michelle_Branch-Everywhere.mp3",
+    title: "Everywhere",
+    artist: "Michelle Branch",
+  },
+  {
+    url: "resources/Taylor_Swift-You_Belong_With_Me.mp3",
+    title: "You Belong With Me",
+    artist: "Taylor Swift",
   }
 ];
