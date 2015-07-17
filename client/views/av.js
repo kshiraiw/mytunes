@@ -7,6 +7,7 @@ var startVisualize = function() {
   analyser.fftSize = 512;
   // we have to connect the MediaElementSource with the analyser 
   audioSrc.connect(analyser);
+  analyser.connect(ctx.destination);
   // we could configure the analyser: e.g. analyser.fftSize (for further infos read the spec)
  
   // frequencyBinCount tells you how many values you'll receive from the analyser
@@ -46,8 +47,8 @@ var startVisualize = function() {
      // console.log(frequencyData)
 
      visualizer.selectAll('rect')
-               .data(frequencyData)
-               .attr('y', function(d) {
+            .data(frequencyData)
+                 .attr('y', function(d) {
                 return 300 - Math.abs(d);
                })
                .attr('height', function(d) {
