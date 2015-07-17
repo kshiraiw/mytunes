@@ -12,11 +12,14 @@ var SongQueue = Songs.extend({
       this.at(0).dequeue();
     }, this);
 
-    this.on('dequeue', function() {
-      this.remove(this.at(0));
+    this.on('dequeue', function(song) {
+      if (this.length === 1) {
+        $('audio').attr('src', "");
+      }
+      this.remove(song);
       if(this.length > 0) {
         this.playFirst();
-      }
+      } 
     }, this);
   },
 

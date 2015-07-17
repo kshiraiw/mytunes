@@ -1,5 +1,4 @@
 var startVisualize = function() {
-  console.log("from visualize!")
   var ctx = new AudioContext();
   var audio = document.getElementById('audio');
   var audioSrc = ctx.createMediaElementSource(audio);
