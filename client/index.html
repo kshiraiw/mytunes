@@ -14,6 +14,7 @@
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
 
     <script src="data/data.js"></script>
 
@@ -28,6 +29,7 @@
     <script src="views/SongQueueView.js"></script>
     <script src="views/SongQueueEntryView.js"></script>
     <script src="views/AppView.js"></script>
+    <script src="views/av.js"></script>
 
     <script>
       $(function(){
@@ -40,6 +42,7 @@
 
         // put the view onto the screen
         $('body').append(appView.render());
+        $('body').append('<center><svg class="visualizer"></svg><center>');
       });
     </script>
   </body>

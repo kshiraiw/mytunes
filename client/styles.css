@@ -6,7 +6,7 @@ body, html{
   
 }
 .songQueue tr:first-child {
-  background-color: #e6aef7;
+  background-color: #90FFA2;
 }
 
 tr:nth-child(even) {
@@ -16,7 +16,9 @@ tr:nth-child(even) {
 
 th {
   font-weight: 1000;
-  background-color: #94C1FF;
+  color: white;
+  background: -webkit-linear-gradient(rgb(27, 158, 116), rgb(34, 82, 115));
+  background: linear-gradient(rgb(27, 158, 116), rgb(34, 82, 115));
 }
 
 table, th{
